@@ -92,9 +92,7 @@ function envision_font_url() {
 	 * Translators: If there are characters in your language that are not supported
 	 * by Open Sans, translate this to 'off'. Do not translate into your own language.
 	 */
-	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'envision' ) ) {
-		$font_url = add_query_arg( 'family', urlencode( 'Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700' ), "//fonts.googleapis.com/css" );
-	}
+		$font_url = add_query_arg( 'family', urlencode( 'Open Sans:300italic,400italic,600italic,700italic,300,400,600,700' ), "//fonts.googleapis.com/css" );
 
 	return $font_url;
 }
@@ -120,11 +118,6 @@ function envision_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'envision_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -164,7 +157,7 @@ add_filter( 'post_class', 'envision_post_classes' );
 function envision_excerpt_length( $length ) {
 	return 25;
 }
-add_filter( 'excerpt_length', 'envision_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'envision_excerpt_length', 11 );
 
 /**
  * Custom excerpt read more.

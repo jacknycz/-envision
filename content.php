@@ -22,7 +22,6 @@
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php // envision_posted_on(); ?>
 					<span class="entry-author"><?php the_author(); ?></span> &nbsp;
 					<span class="entry-comments"><?php comments_number( 'No comments yet', 'One comment', '% responses' ); ?></span>
 				</div><!-- .entry-meta -->

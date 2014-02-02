@@ -344,15 +344,18 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
+	color: #00b5b5;
+	text-decoration: none;
 }
 a:visited {
-	color: royalblue;
+	color: #00b5b5;
+	text-decoration: none;
 }
 a:hover,
 a:focus,
 a:active {
-	color: royalblue;
+	color: #00b5b5;
+	text-decoration: none;
 }
 
 /* Alignment */
@@ -486,10 +489,11 @@ a:active {
 
 .site-header {
 	background: #3e4651;
-	padding: 10px 0;
+	padding: 0 0 10px;
 }
 .site-branding {
 	float: left;
+	margin-top: 10px;
 }
 h1.site-title {
 	margin: 0;
@@ -944,9 +948,14 @@ a.read-more {
 	clear: both;
 	margin: 0 0 1.5em;
 }
-.post-edit-link {
+.post-edit-link,
+.post-edit-link:visited {
 	color: #00b5b5;
 	text-decoration: none;
+}
+.page-template-page-templatesfull-width-php .post-edit-link {
+	margin-bottom: 20px;
+	display: inline-block;
 }
 .entry-content td {
 	padding: 5px;
@@ -1141,9 +1150,6 @@ object {
 	overflow: hidden;
 	margin: 30px 50px 0;
 	padding: 20px 0;
-}
-.single .site-main [class*="navigation"] {
-	border-top: 1px solid #ccc;
 }
 .site-main [class*="navigation"] a {
 	color: #3e4651;
