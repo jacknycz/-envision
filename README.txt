@@ -3,7 +3,7 @@ Theme URI: http://southernweb.com/envision/
 Author: Southern Web Group
 Author URI: http://southernweb.com/
 Description: Envison is a very flexible, photo driven theme especially useful for Photography and Travel blogs. It's responsive, a bit customizable and totally awesome.
-Version: 1.1
+Version: 1.2
 License: GNU General Public License
 License URI: license.txt
 Text Domain: envision
