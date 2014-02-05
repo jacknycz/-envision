@@ -864,6 +864,7 @@ pre {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #f16233;
+	display: inline-block;
 }
 .cat-links a {
 	margin: 0;
@@ -957,7 +958,8 @@ a.read-more {
 	margin-bottom: 20px;
 	display: inline-block;
 }
-.entry-content td {
+.entry-content td,
+.entry-content th {
 	padding: 5px;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
@@ -990,6 +992,13 @@ a.read-more {
 .tagcloud,
 .search-form {
 	padding-top: 5px;
+}
+
+/* Dropdowns */
+.widget select {
+	width: 100%;
+	color: #3e4651;
+	margin: 10px 0;
 }
 
 
@@ -1026,7 +1035,8 @@ a.read-more {
 	border-bottom: 1px solid #8291a0;
 }
 .sidebar-widget-area .widget li a {
-	display: block;
+	display: inline-block;
+	margin-right: 5px;
 }
 .sidebar-widget-area .widget li a:hover {
 	color: #fff;
